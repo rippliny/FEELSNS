@@ -115,8 +115,8 @@
         }
 
         .comment_box_1 {
-            margin-top: 30px;
-
+            margin-top: 550px;
+            border: 1px solid palevioletred;;
         }
 
         .comment_box_2 {
@@ -204,8 +204,6 @@
             </div>
         </div>
 
-
-
         <div class="comment_box_1">
             <div class="comment_writer_list">
                 <h4> Name | {{ post.username }}</h4>
@@ -213,7 +211,7 @@
 
             <div class="comment_list">
                 <h4> 댓글 | {{ post.comment }}</h4>
-                    <button class="comment_delete_btn"> 삭제 </button>
+                <button class="comment_delete_btn"> 삭제 </button>
             </div>
         </div>
 
@@ -225,7 +223,7 @@
 
             <div class="comment_write">
                 <input type="text" class="form-control" id="comment_write" placeholder="댓글을 남겨주세요">
-                    <button class="comment_save_btn"> 게시 </button>
+                <button class="comment_save_btn"> 게시 </button>
             </div>
         </div>
 </body>

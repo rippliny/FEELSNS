@@ -89,9 +89,12 @@
         }
 
         .follower_frame {
-            border: 1px solid green;
+            border: 5px solid #667eea;
+            border-radius: 20px;
+            
             float: left;
             margin-left: 5%;
+            margin-top: 50px;
             width: 30%;
             box-sizing: border-box;
         }
@@ -130,7 +133,7 @@
             </div>
 
             <div class="write_post_btn" href="/">
-                <button class="btn-hover color-2" onclick="location.href='/fileupload'">프로필 편집</button>
+                <button class="btn-hover color-2" onclick="location.href='/fileupload'">profile edit</button>
             </div>
 
         </div>
@@ -146,9 +149,9 @@
                     {% endif %}
                 </div>
                 <div style="margin-left: 30px;">
-                    <h5 class="card-title">{{ ul.nickname }}</h5>
+                    <p class="card-title">{{ ul.nickname }}</p>
                     <p class="card-text">
-                        팔로잉 {{ ul.follow.count }} 명팔로워 {{ ul.followee.count }} 명
+                        팔로잉 {{ ul.follow.count }} 명<br>팔로워 {{ ul.followee.count }} 명
                     </p>
                     {% if ul in user.follow.all %}
                     <a href="/user/follow/{{ ul.id }}" class="card-link">[팔로우 취소]</a>
